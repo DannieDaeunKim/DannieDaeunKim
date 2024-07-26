@@ -1,0 +1,36 @@
+#Sal's shipping company 📦🛸
+#Dannie Kim
+
+weight = 41.5
+
+#ground_cost🚛
+if weight <= 2:
+   ground_cost = 1.5 * weight + 20
+elif 2 < weight <= 6:
+  ground_cost = 3 * weight + 20
+elif 6 < weight <= 10:
+  ground_cost = 4 * weight + 20
+else:
+  ground_cost = 4.75 * weight + 20
+
+print("Ground_cost:",ground_cost)
+
+#premium_ground_cost🚛⚡️
+premium_ground_cost = 125.0
+
+print("Premium_ground_cost:",premium_ground_cost)
+
+#Drone_shipping🛸
+if weight <= 2:
+  drone_shipping = weight * 4.5
+elif 2 < weight <= 6:
+  drone_shipping = weight * 9.0
+elif 6 < weight <= 10:
+  drone_shipping = weight * 12.0
+else:
+ drone_shipping = weight * 14.25
+
+print("Drone shipping:",drone_shipping)
+
+#The cheapest method for a 4.8 pound package = ground shipping
+#The cheapest method for a 41.5 pound package = premium_ground_cost
